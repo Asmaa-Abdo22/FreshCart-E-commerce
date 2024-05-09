@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: var(--font-family) !important;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.products .addBtn {
+  transform: translateY(350%);
+  transition: 0.5s transform;
+}
+.products:hover {
+  border: solid 1px var(--main-color);
+}
+.products:hover .addBtn {
+  transform: translateY(-9%);
+}
+.font-sm {
+  font-size: 14px;
+}
+.text-main {
+  color: var(--main-color);
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+.carLinktTop {
+  top: 10%;
+}
+
+/* ------------FORM CONTROL ---------- */
+.form-control:focus {
+  border-color: var(--main-color);
+  box-shadow: none;
+}
+.bg-grad {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+}
+.cardImg {
+  transition: transform 0.3s;
+  cursor: pointer;
+  padding-top: 20px;
+}
+.cardImg:hover {
+  transform: scale(1.1);
+}
+.category {
+  border-radius: 10px;
+  border: 0.2px solid rgb(206, 197, 197);
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.category:hover {
+  box-shadow: 0px 0px 3px 2px #0aad0a;
+}
+.brand {
+  border: 0.2px solid rgb(206, 197, 197);
+  transition: 0.5s box-shadow;
+}
+.brand:hover {
+  box-shadow: 0px 0px 3px 2px #0aad0a;
+}
+
+.heartBtn {
+  border: none;
+  background-color: transparent;
+}
+.heartBtn:checked {
+  background-color: transparent;
+  color: red;
+}
