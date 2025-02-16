@@ -22,7 +22,7 @@ The E-commerce project is the final project for a Front End diploma for 5 months
   * Log in / Register
   * Authentication
   * Authorization
-  * 
+    
 # Technologies used :
 * HTML
 * Bootstrap
